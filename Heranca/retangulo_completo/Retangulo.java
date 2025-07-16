@@ -32,6 +32,6 @@ public class Retangulo extends FormaGeometrica{
 
     @Override
     public String toString() {
-        return "[Retangulo] " + getLargura() + " / " + getAltura();
+        return "[Retangulo] " + String.format("%.1f", getLargura()) + " / " + String.format("%.1f", getAltura());
     }
 }
