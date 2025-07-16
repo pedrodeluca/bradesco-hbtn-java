@@ -25,7 +25,8 @@ public class Retangulo extends FormaGeometrica{
         this.altura = altura;
     }
 
+    @Override
     public double area() {
-        throw new UnsupportedOperationException("Funcao area nao implementada");
+        return getAltura() * getLargura();
     }
 }
