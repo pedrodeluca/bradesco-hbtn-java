@@ -57,15 +57,15 @@ public class Pedido {
             totalProdutos += Double.sum(item.getProduto().getPrecoBruno(), item.getProduto().obterPrecoLiquido()) * item.getQuantidade();
         }
 
-        System.out.println("-----------------------------");
+        System.out.println("----------------------------");
 
         System.out.println("DESCONTO: " + String.format("%.2f", calcularValorDesconto()));
         System.out.println("TOTAL PRODUTOS: " + String.format("%.2f", totalProdutos));
 
-        System.out.println("-----------------------------");
+        System.out.println("----------------------------");
 
         System.out.println("TOTAL PEDIDO: " + String.format("%.2f", calcularTotal()));
 
-        System.out.println("-----------------------------");
+        System.out.println("----------------------------");
     }
 }
