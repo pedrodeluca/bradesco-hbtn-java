@@ -1,7 +1,7 @@
-import Atividades.CarregarVideo;
-import Atividades.CodificarVideo;
-import Atividades.EnviarEmail;
-import Atividades.ModificarStatusVideo;
+import atividades.CarregarVideo;
+import atividades.CodificarVideo;
+import atividades.EnviarEmail;
+import atividades.ModificarStatusVideo;
 
 import java.util.ArrayList;
 import java.util.List;
