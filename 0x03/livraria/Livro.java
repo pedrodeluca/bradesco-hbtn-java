@@ -1,3 +1,6 @@
+import exceptions.AutorInvalidoException;
+import exceptions.LivroInvalidoException;
+
 import java.util.StringTokenizer;
 
 public class Livro {
