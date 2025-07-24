@@ -37,11 +37,8 @@ public class ContaBancariaBasica {
     public double calcularJurosMensal() {
         if (this.saldo < 0)
             return 0;
-        //nao entendi essa regra abaixo
-        if (this.saldo * 10 / 100 > 10)
-            return this.saldo * 10 / 100;
-        else
-            return 0;
+
+        return (this.saldo * getTaxaJurosAnual() / 100) / 12;
     }
 
     public void aplicarAtualizacaoMensal() {
