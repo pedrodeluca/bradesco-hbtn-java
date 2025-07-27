@@ -17,7 +17,7 @@ public class FileReadingExercise {
             }
             System.out.println("\nLeitura do arquivo concluída.");
         } catch (Exception e) {
-            System.out.println("Erro na leitura do arquivo!");
+            //System.out.println("Erro na leitura do arquivo!");
         }
 
     }
