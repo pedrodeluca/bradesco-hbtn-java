@@ -16,25 +16,21 @@ public class FileWritingExercise {
 
         // implemente o codigo aqui
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
-            registraDados(scanner, writer);
+            String conteudo="sim";
+            while (!conteudo.equals("sair")) {
+                System.out.print("Oque deseja gravar no arquivo: ");
+                conteudo = scanner.nextLine();
+
+                if (conteudo.equals("sair"))
+                    return;
+
+                writer.write(conteudo);
+                writer.newLine();
+            }
         } catch (IOException e) {
             System.out.println("Erro ao realizar a gravação do arquivo");
         }
 
         scanner.close();
-    }
-
-    public static void registraDados(Scanner scanner, BufferedWriter writer) throws IOException {
-        String conteudo="sim";
-        while (!conteudo.equals("sair")) {
-            System.out.print("Oque deseja gravar no arquivo: ");
-            conteudo = scanner.nextLine();
-
-            if (conteudo.equals("sair"))
-                return;
-
-            writer.write(conteudo);
-            writer.newLine();
-        }
     }
 }
