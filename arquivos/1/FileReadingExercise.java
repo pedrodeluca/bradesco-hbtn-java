@@ -11,13 +11,12 @@ public class FileReadingExercise {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String linha;
-            System.out.println("Conteúdo do arquivo 'exemplo.txt':");
+            System.out.println("Conteúdo do arquivo 'exemplo.txt':\n");
             System.out.println();
             while((linha = reader.readLine()) != null) {
                 System.out.println(linha);
             }
-            System.out.println();
-            System.out.println("Leitura do arquivo concluída.");
+            System.out.print("\nLeitura do arquivo concluída.");
         } catch (Exception e) {
             //System.out.println("Erro na leitura do arquivo!");
         }
