@@ -22,7 +22,7 @@ public class FileWritingExercise {
                 conteudo = scanner.nextLine();
 
                 if (conteudo.equals("sair"))
-                    return;
+                    break;
 
                 writer.write(conteudo);
                 writer.newLine();
