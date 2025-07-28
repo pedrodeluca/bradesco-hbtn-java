@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,10 +31,10 @@ public class GestaoAlunos {
                     excluirAluno(alunos);
                     break;
                 case 3:
-                    buscarPeloNome(alunos);
+                    buscarAluno(alunos);
                     break;
                 case 4:
-                    exibirAlunos(alunos);
+                    listarAlunos(alunos);
                     break;
                 case 5:
                     System.out.println("Encerrando o Programa. Até a próxima!");
@@ -56,7 +55,9 @@ public class GestaoAlunos {
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-        Aluno aluno = new Aluno(nome, idade);
+//        Aluno aluno = new Aluno(nome, idade);
+        Aluno aluno = new Aluno();
+        aluno.adicionarAluno(nome, idade);
         alunos.add(aluno);
     }
 
@@ -82,7 +83,7 @@ public class GestaoAlunos {
             System.out.println("Não foi encontrado o aluno (" + excluirAluno + ") na lista para exclusão");
     }
 
-    public static void buscarPeloNome(List<Aluno> alunos) {
+    public static void buscarAluno(List<Aluno> alunos) {
         if (alunos.isEmpty()) {
             System.out.println("Lista de alunos vazia");
             return;
@@ -104,7 +105,7 @@ public class GestaoAlunos {
             System.out.println("Não foi encontrado o aluno (" + pesquisarAluno + ") na lista");
     }
 
-    public static void exibirAlunos(List<Aluno> alunos) {
+    public static void listarAlunos(List<Aluno> alunos) {
         if (alunos.isEmpty()) {
             System.out.println("Lista de alunos vazia");
             return;

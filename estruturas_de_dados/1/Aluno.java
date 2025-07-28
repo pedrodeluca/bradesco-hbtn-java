@@ -11,6 +11,11 @@ public class Aluno {
         this.idade = idade;
     }
 
+    public void adicionarAluno(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
     public String getNome() {
         return nome;
     }
