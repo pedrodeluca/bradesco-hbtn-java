@@ -28,6 +28,7 @@ public class Estoque {
 
     public void excluirProduto(int idExcluir) {
         List<Produto> produtos = lerAquivoCompleto();
+        Boolean idEncontrado=false;
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(arquivo))) {
             for (Produto produto : produtos) {
@@ -84,7 +85,7 @@ public class Estoque {
                 System.err.println("Ocorreu um erro ao gravar o arquivo: " + e.getMessage());
             }
         } else {
-            adicionarProduto(produtoAlterado.getNome(), produtoAlterado.getQuantidade(), produtoAlterado.getPreco());
+            System.out.println("Não foi possivel encontrar o ID do produto informado");
         }
     }
 
