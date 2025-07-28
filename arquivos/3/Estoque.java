@@ -20,7 +20,7 @@ public class Estoque {
                 writer.newLine();
             }
             writer.close();
-            System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
+//            System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
         } catch (IOException e) {
             System.err.println("Ocorreu um erro ao gravar o arquivo: " + e.getMessage());
         }
@@ -39,7 +39,7 @@ public class Estoque {
                 }
             }
             writer.close();
-            System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
+            //System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
         } catch (IOException e) {
             System.err.println("Ocorreu um erro ao gravar o arquivo: " + e.getMessage());
         }
@@ -80,12 +80,12 @@ public class Estoque {
                     writer.newLine();
                 }
                 writer.close();
-                System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
+//                System.out.println("Lista gravada com sucesso no arquivo: " + arquivo);
             } catch (IOException e) {
                 System.err.println("Ocorreu um erro ao gravar o arquivo: " + e.getMessage());
             }
         } else {
-            System.out.println("Não foi possivel encontrar o ID do produto informado");
+//            System.out.println("Não foi possivel encontrar o ID do produto informado");
         }
     }
 
@@ -99,7 +99,7 @@ public class Estoque {
                 produtos.add(produto);
             }
         } catch (Exception e) {
-            System.out.println("Erro na leitura do metodo lerArquivoCompleto");
+//            System.out.println("Erro na leitura do metodo lerArquivoCompleto");
         }
         return produtos;
     }
