@@ -28,7 +28,7 @@ public class GerenciamentoDeContatos {
     public void exibirContatos() {
         for (Map.Entry<String, Contato> entry : contatos.entrySet()) {
             System.out.println("Nome: " + entry.getKey());
-            System.out.println("Telefone: " + entry.getValue().getTelefones());
+            System.out.println("Telefones: " + entry.getValue().getTelefones());
             System.out.println("Emails: " + entry.getValue().getEmails());
             System.out.println("-------------------------------");
         }
