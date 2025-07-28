@@ -55,9 +55,7 @@ public class GestaoAlunos {
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-//        Aluno aluno = new Aluno(nome, idade);
-        Aluno aluno = new Aluno();
-        aluno.adicionarAluno(nome, idade);
+        Aluno aluno = new Aluno(nome, idade);
         alunos.add(aluno);
     }
 
