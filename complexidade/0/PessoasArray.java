@@ -19,15 +19,8 @@ public class PessoasArray {
 
     // implementar o método de pesquisaConstante
     public void pesquisaTempoConstante(int id){
-        try {
-            for (int i=0 ; i<=id ; i++) {
-                if (i == id) {
-                    System.out.println("Nome pesquisado é " + this.nomes[i] + " que está na posição " + i);
-                    return;
-                }
-            }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            throw new IllegalArgumentException("O array de nomes possui :22 nomes.");
+        try { System.out.println("Nome pesquisado é " + this.nomes[id] + " que está na posição " + id);
+        } catch (ArrayIndexOutOfBoundsException e) {throw new IllegalArgumentException("O array de nomes possui :22 nomes.");
         }
     }
 }
