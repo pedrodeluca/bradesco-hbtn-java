@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Estoque {
-    public final String arquivo = "C:\\Desenv\\Projetos\\Holberton\\bradesco-hbtn-java\\arquivos\\3\\estoque.csv";
+    public final String arquivo = "estoque.csv";
 
     public Estoque(String s) {
     }
