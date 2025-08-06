@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class CsvFileReader {
     public static void main(String[] args) {
-        String path = "C:/Desenv/Projetos/Holberton/bradesco-hbtn-java/arquivos/2/funcionarios.csv";
+        String path = "funcionarios.csv";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String linha;
