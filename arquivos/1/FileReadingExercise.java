@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class FileReadingExercise {
     public static void main(String[] args) {
-        String path = "C:\\Desenv\\Projetos\\Holberton\\bradesco-hbtn-java\\arquivos\\1\\exemplo.txt";
+        String path = "exemplo.txt";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String linha;
