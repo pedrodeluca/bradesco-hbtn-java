@@ -17,7 +17,7 @@ public class CsvFileReader {
                 System.out.println("------------------------");
             }
             System.out.println("Leitura do arquivo concluída.");
-//            System.out.println();
+            System.out.println();
         } catch (IOException e) {
             System.out.println("Erro ao realizar a leitura do arquivo");
         }
