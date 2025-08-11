@@ -1,3 +1,8 @@
+import java.util.Formattable;
+import java.util.Formatter;
+
+import static java.lang.String.format;
+
 public class Eletronico {
     String descricao;
     double valor;
@@ -9,6 +14,7 @@ public class Eletronico {
 
     @Override
     public String toString() {
-      return "[" + descricao + "] R$ " + valor;
+        String val = format("%.6f", valor);
+        return "[" + descricao + "] R$ " + val;
     }
 }

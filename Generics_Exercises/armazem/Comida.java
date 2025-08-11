@@ -1,6 +1,8 @@
+import static java.lang.String.format;
+
 public class Comida {
     String nome;
-    int calorias;
+    double calorias;
     double preco;
 
     public Comida(String nome, int calorias, double preco) {
@@ -11,6 +13,8 @@ public class Comida {
 
     @Override
     public String toString() {
-        return "[" + nome + "] " + calorias + " R$ " + preco;
+        String pre = format("%.6f", preco);
+        String cal = format("%.6f", calorias);
+        return "[" + nome + "] " + cal + " R$ " + pre;
     }
 }
