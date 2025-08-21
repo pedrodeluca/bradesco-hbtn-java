@@ -1,12 +1,11 @@
-package Collections_Exercicios.blog;
 import java.util.*;
 
 public class Blog {
 
-    List<Post> postagens;
+    Set<Post> postagens;
 
     public Blog() {
-        this.postagens = new ArrayList();
+        this.postagens = new HashSet<>();
     }
 
     public void adicionarPostagem(Post postagem) {
