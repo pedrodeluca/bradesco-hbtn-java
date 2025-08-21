@@ -2,10 +2,10 @@ import java.util.*;
 
 public class Blog {
 
-    Set<Post> postagens;
+    private List<Post> postagens;
 
     public Blog() {
-        this.postagens = new HashSet<>();
+        this.postagens = new ArrayList();
     }
 
     public void adicionarPostagem(Post postagem) {
