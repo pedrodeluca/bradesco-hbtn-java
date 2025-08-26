@@ -1,5 +1,5 @@
 @FunctionalInterface
 public interface CalculadorDeSalario {
 
-    Double calcular(Double valor);
+    double calcular(double valor);
 }
