@@ -22,7 +22,7 @@ public class Produto {
 
         DecimalFormat formatador = new DecimalFormat("#,##0.00", simbolos);
 
-        return String.format("[%d] %s - %s: R$ %s", this.codigo, this.nome, this.categoria, formatador.format(this.preco));
+        return String.format("[%d] %s %s R$ %s", this.codigo, this.nome, this.categoria, formatador.format(this.preco));
     }
 
     public int getCodigo() {
