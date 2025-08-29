@@ -19,6 +19,7 @@ public class Produto {
     public String toString() {
         DecimalFormatSymbols simbolos = new DecimalFormatSymbols(new Locale("pt", "BR"));
         simbolos.setDecimalSeparator(',');
+        simbolos.setGroupingSeparator('.');
 
         DecimalFormat formatador = new DecimalFormat("#,##0.00", simbolos);
 
