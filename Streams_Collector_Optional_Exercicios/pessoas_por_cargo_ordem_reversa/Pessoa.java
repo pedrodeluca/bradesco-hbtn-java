@@ -23,7 +23,7 @@ public class Pessoa implements Comparable<Pessoa> {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("pt", "BR"));
         symbols.setDecimalSeparator(',');
 
-        DecimalFormat formatador = new DecimalFormat("#0.00", symbols);
+        DecimalFormat formatador = new DecimalFormat("#0.000000", symbols);
 
         return "[" + this.codigo + "] " + this.nome + " " + this.cargo + " " + this.idade + " R$ " + formatador.format(this.salario);
     }
