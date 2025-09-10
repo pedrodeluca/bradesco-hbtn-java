@@ -8,7 +8,7 @@ class ThreadContador extends Thread {
 
 
     @Override
-    public void run() {
+    public void start() {
         // Cada thread incrementa o contador 1000 vezes
         for (int i = 0; i < 1000; i++) {
             contador.incrementar();
