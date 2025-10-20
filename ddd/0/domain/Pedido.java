@@ -1,5 +1,6 @@
 package com.techcamps.domain;
 
+import java.io.ObjectInputFilter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -32,7 +33,7 @@ public class Pedido {
     }
 
     public void cancelar() {
-        //implementar
+        status = StatusPedido.CANCELADO;
     }
 
     public String getId() {
